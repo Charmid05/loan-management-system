@@ -2,10 +2,10 @@
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
-from django.core import management
+from django.core import management # type: ignore
 
 try:
-    from django.utils.deprecation import RemovedInDjango40Warning
+    from django.utils.deprecation import RemovedInDjango40Warning # type: ignore
 except ImportError:
     raise ImportError(
         'django-admin.py was deprecated in Django 3.1 and removed in Django '
